@@ -15,14 +15,25 @@ Simply extend the config in your `.eslintrc` or `.eslintrc.js`:
 }
 ```    
 
-## Vue
+### Vue
 
-The `vue.js` file contains extra rules to use with a Vue project. Add it to your extends list like this:
+The `vue.js` file contains extra rules to use with a Vue project. Add it to your extends list **in addition to** the base like this:
 ```
 {
     extends: [
         '@digitickets/eslint-config-digitickets',
         '@digitickets/eslint-config-digitickets/vue'
+    ]
+}
+```
+
+### ES5
+
+The `es5.js` file disables some rules for situations where ES6 cannot be used. Add it to your extends list **instead of** the base like this:
+```
+{
+    extends: [
+        '@digitickets/eslint-config-digitickets/es5'
     ]
 }
 ```
