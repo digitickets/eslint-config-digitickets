@@ -9,16 +9,15 @@ module.exports = {
     ],
 
     rules: {
-        'vue/script-indent': [
-            'error', 4,
-            {
-                baseIndent: 1,
-                switchCase: 1
-            },
-        ],
+        'vue/html-closing-bracket-newline': ['error', {
+            singleline: 'never',
+            multiline: 'never'
+        }],
 
         // Use 4 spaces for indents in HTML (maybe only applies in Vue templates?)
         'vue/html-indent': ['error', 4],
+
+        'vue/html-self-closing': 'off',
 
         // https://github.com/vuejs/eslint-plugin-vue/blob/master/docs/rules/max-attributes-per-line.md
         // https://vuejs.org/v2/style-guide/#Multi-attribute-elements-strongly-recommended
@@ -30,12 +29,14 @@ module.exports = {
             }
         }],
 
-        'vue/html-self-closing': 'off',
+        'vue/script-indent': [
+            'error', 4,
+            {
+                baseIndent: 1,
+                switchCase: 1
+            },
+        ]
 
-        'vue/html-closing-bracket-newline': ['error', {
-            singleline: 'never',
-            multiline: 'never'
-        }]
     },
 
     overrides: [

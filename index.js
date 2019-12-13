@@ -1,9 +1,48 @@
 module.exports = {
-
     // airbnb-base has all the ES6 rules without the React stuff
     extends: 'eslint-config-airbnb-base',
 
     rules: {
+        // Require a trailing comma in multiline arrays (same as airbnb) but remove others because trailing commas
+        // in objects breaks iOS 10.3 (and probably other older browsers).
+        'comma-dangle': [
+            'error',
+            {
+                arrays: 'always-multiline',
+                objects: 'never',
+                imports: 'never',
+                exports: 'never',
+                functions: 'never'
+            },
+        ],
+
+        // Don't require a default case in switch statements
+        // https://eslint.org/docs/rules/default-case
+        'default-case': 'off',
+
+        // Disable the Airbnb requirement that module imports come before our own files, because it's much easier
+        // to just sort the lines alphabetically.
+        'import/order': 'off',
+
+        // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/prefer-default-export.md
+        'import/prefer-default-export': 'off',
+
+        // Indent with 4 spaces
+        indent: [
+            'error',
+            4,
+            {
+                // Indent switch case:
+                SwitchCase: 1
+            },
+        ],
+
+        // Disable: Line comments should go above the line not on the same line.
+        // Sometimes it's useful to have the comment on the same line.
+        'line-comment-position': [
+            'off',
+        ],
+
         // Set maximum line length to 120 to match PSR-2
         // https://eslint.org/docs/rules/max-len
         'max-len': [
@@ -25,31 +64,22 @@ module.exports = {
             },
         ],
 
-        // Indent with 4 spaces
-        indent: [
-            'error',
-            4,
-            {
-                // Indent switch case:
-                SwitchCase: 1
-            },
+        // Non jsdoc multi line comments should be separate single line comments rather than using a block comment.
+        'multiline-comment-style': [
+            'warn',
+            'separate-lines',
         ],
 
-        // Require a trailing comma in multiline arrays (same as airbnb) but remove others because trailing commas
-        // in objects breaks iOS 10.3 (and probably other older browsers).
-        'comma-dangle': [
-            'error',
-            {
-                arrays: 'always-multiline',
-                objects: 'never',
-                imports: 'never',
-                exports: 'never',
-                functions: 'never'
-            },
+        // Allow window.alert for lazy messages.
+        'no-alert': [
+            'off',
         ],
 
         // Allow console.log etc.
         'no-console': 'off',
+
+        // Allow 'continue' statements.
+        'no-continue': 'off',
 
         // Disallow return before else
         // If an if block contains a return statement, the else block becomes unnecessary. Its contents can be placed
@@ -78,36 +108,8 @@ module.exports = {
             'off',
         ],
 
-        // Disable converting `let a = data.a` to `let {a} = data`. It's too big of a change at present.
-        // TODO: Can be removed if we decide we prefer that way.
-        'prefer-destructuring': [
-            'off',
-        ],
-
-        // Disable using template literals instead of string concatenation.
-        // https://eslint.org/docs/rules/prefer-template
-        'prefer-template': [
-            'off',
-        ],
-
-        // Non jsdoc multi line comments should be separate single line comments rather than using a block comment.
-        'multiline-comment-style': [
-            'warn',
-            'separate-lines',
-        ],
-
-        // Disable: Line comments should go above the line not on the same line.
-        // Sometimes it's useful to have the comment on the same line.
-        'line-comment-position': [
-            'off',
-        ],
-
-        // Disable the Airbnb requirement that module imports come before our own files, because it's much easier
-        // to just sort the lines alphabetically.
-        'import/order': 'off',
-
-        // Allow 'continue' statements.
-        'no-continue': 'off',
+        // https://eslint.org/docs/rules/no-use-before-define
+        'no-use-before-define': 'off',
 
         // Enforce line breaks between braces
         // https://eslint.org/docs/rules/object-curly-newline
@@ -118,8 +120,15 @@ module.exports = {
             ExportDeclaration: { minProperties: 4, multiline: true, consistent: true }
         }],
 
-        // Allow window.alert for lazy messages.
-        'no-alert': [
+        // Disable converting `let a = data.a` to `let {a} = data`. It's too big of a change at present.
+        // TODO: Can be removed if we decide we prefer that way.
+        'prefer-destructuring': [
+            'off',
+        ],
+
+        // Disable using template literals instead of string concatenation.
+        // https://eslint.org/docs/rules/prefer-template
+        'prefer-template': [
             'off',
         ],
 

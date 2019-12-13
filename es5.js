@@ -6,9 +6,9 @@ module.exports = {
     // Disable ES6 specific stuff.
     rules: {
         'func-names': 'off',
-        'prefer-arrow-callback': 'off',
-        'prefer-const': 'off',
+        'no-var': 'off',
         'object-shorthand': 'off',
-        'no-var': 'off'
+        'prefer-arrow-callback': 'off',
+        'prefer-const': 'off'
     }
 };
