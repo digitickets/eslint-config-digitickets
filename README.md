@@ -4,6 +4,18 @@ This is a standard code style for all DigiTickets Javascript, based on [eslint-c
 
 This is designed to be used with ES6 code. For `app` everything is run through Webpack so there's no concern about browser support. For `epos` Webpack does not parse the code (yet) and the ES6 runs natively in the browser so there are some rules to cater for that.
 
+## Install
+
+npm
+```
+npm install @digitickets/eslint-config-digitickets --save-dev
+```
+
+yarn
+```
+yarn add @digitickets/eslint-config-digitickets --dev
+```
+
 ## Usage
 
 Simply extend the config in your `.eslintrc` or `.eslintrc.js`:
