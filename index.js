@@ -3,6 +3,15 @@ module.exports = {
     extends: 'eslint-config-airbnb-base',
 
     rules: {
+        // https://eslint.org/docs/rules/arrow-parens
+        'arrow-parens': [
+            'error',
+            'as-needed',
+            {
+                requireForBlockBody: true
+            },
+        ],
+
         // Require a trailing comma in multiline arrays (same as airbnb) but remove others because trailing commas
         // in objects breaks iOS 10.3 (and probably other older browsers).
         'comma-dangle': [
