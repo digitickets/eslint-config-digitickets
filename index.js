@@ -16,7 +16,7 @@ module.exports = {
             },
         ],
 
-        // Disable Enforce that class methods utilize 'this'.
+        // Disable enforcing that class methods utilize 'this'.
         // This tries to make you convert methods that do not use 'this' into static methods.
         'class-methods-use-this': 'off',
 
@@ -81,13 +81,13 @@ module.exports = {
         ],
 
         // Require a return tag in the jsdoc if the function returns something.
-        // Disabled because it requires the tag be @returns intead of @return.
+        // Disabled because it requires the tag be @returns instead of @return.
         // "jsdoc/require-returns": [
         //    "error"
         // ],
 
         // Ensure the function returns something if the jsdoc says it does.
-        // Disabled because it requires the tag be @returns intead of @return.
+        // Disabled because it requires the tag be @returns instead of @return.
         // "jsdoc/require-returns-check": [
         //    "error"
         // ],
@@ -178,6 +178,13 @@ module.exports = {
         // Disable converting `let a = data.a` to `let {a} = data`. It's too big of a change at present.
         // TODO: Can be removed if we decide we prefer that way.
         'prefer-destructuring': [
+            'off',
+        ],
+
+        // When Object.assign is called using an object literal as the first argument, this rule requires using the
+        // object spread syntax instead.
+        // This rule should not be used unless ES2018 is supported in your codebase.
+        'prefer-object-spread': [
             'off',
         ],
 
