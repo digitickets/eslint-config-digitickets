@@ -2,6 +2,10 @@ module.exports = {
     // airbnb-base has all the ES6 rules without the React stuff
     extends: 'eslint-config-airbnb-base',
 
+    plugins: [
+        'jsdoc',
+    ],
+
     rules: {
         // https://eslint.org/docs/rules/arrow-parens
         'arrow-parens': [
@@ -49,6 +53,44 @@ module.exports = {
                 SwitchCase: 1
             },
         ],
+
+        // Reports invalid alignment of JSDoc block asterisks.
+        'jsdoc/check-alignment': [
+            'error',
+        ],
+
+        // Ensures that parameter names in JSDoc match those in the function declaration.
+        'jsdoc/check-param-names': [
+            'error',
+        ],
+
+        // Ensures jsdoc conforms to Google Closure Compiler syntax.
+        'jsdoc/check-syntax': [
+            'error',
+        ],
+
+        // Require a blank line between the description and tags in a jsdoc.
+        'jsdoc/newline-after-description': [
+            'error',
+            'always',
+        ],
+
+        // Ensure all params are present in the jsdoc if there is one.
+        'jsdoc/require-param': [
+            'error',
+        ],
+
+        // Require a return tag in the jsdoc if the function returns something.
+        // Disabled because it requires the tag be @returns intead of @return.
+        // "jsdoc/require-returns": [
+        //    "error"
+        // ],
+
+        // Ensure the function returns something if the jsdoc says it does.
+        // Disabled because it requires the tag be @returns intead of @return.
+        // "jsdoc/require-returns-check": [
+        //    "error"
+        // ],
 
         // Disable: Line comments should go above the line not on the same line.
         // Sometimes it's useful to have the comment on the same line.
