@@ -12,6 +12,10 @@ module.exports = {
             },
         ],
 
+        // Disable Enforce that class methods utilize 'this'.
+        // This tries to make you convert methods that do not use 'this' into static methods.
+        'class-methods-use-this': 'off',
+
         // Require a trailing comma in multiline arrays (same as airbnb) but remove others because trailing commas
         // in objects breaks iOS 10.3 (and probably other older browsers).
         'comma-dangle': [
