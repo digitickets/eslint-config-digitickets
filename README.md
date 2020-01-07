@@ -8,12 +8,12 @@ This is designed to be used with ES6 code. For `app` everything is run through W
 
 npm
 ```
-npm install @digitickets/eslint-config-digitickets --save-dev
+npm install --save-dev @digitickets/eslint-config-digitickets eslint eslint-plugin-import
 ```
 
 yarn
 ```
-yarn add @digitickets/eslint-config-digitickets --dev
+yarn add --dev @digitickets/eslint-config-digitickets eslint eslint-plugin-import
 ```
 
 ## Usage
