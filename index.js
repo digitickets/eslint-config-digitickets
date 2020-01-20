@@ -7,13 +7,14 @@ module.exports = {
     ],
 
     rules: {
+        // Require parens in arrow function arguments.
+        // e.g. things.filter((color) => color === 'blue');
+        // Originally we decided to set this to as-needed as it used to be in Airbnb. But always having them
+        // allows type hints to work better in PhpStorm, and works better with Typescript.
         // https://eslint.org/docs/rules/arrow-parens
         'arrow-parens': [
             'error',
-            'as-needed',
-            {
-                requireForBlockBody: true
-            },
+            'always',
         ],
 
         // Disable enforcing that class methods utilize 'this'.
