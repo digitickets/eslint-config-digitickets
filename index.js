@@ -37,6 +37,8 @@ module.exports = {
         // https://eslint.org/docs/rules/default-case
         'default-case': 'off',
 
+        'func-names': 'off',
+
         // Disable the Airbnb requirement that module imports come before our own files, because it's much easier
         // to just sort the lines alphabetically.
         'import/order': 'off',
