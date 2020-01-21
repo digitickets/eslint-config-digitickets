@@ -150,6 +150,14 @@ module.exports = {
             },
         ],
 
+        // disallow empty statements
+        'no-empty': [
+            'error',
+            {
+                allowEmptyCatch: true
+            },
+        ],
+
         // Allow parameters to functions, and their properties, to be overridden as we do this a lot.
         'no-param-reassign': [
             'off',
