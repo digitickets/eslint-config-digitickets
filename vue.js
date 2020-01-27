@@ -15,7 +15,13 @@ module.exports = {
         }],
 
         // Use 4 spaces for indents in HTML (maybe only applies in Vue templates?)
-        'vue/html-indent': ['error', 4],
+        'vue/html-indent': [
+            'error',
+            4,
+            {
+                baseIndent: 1
+            },
+        ],
 
         'vue/html-self-closing': 'off',
 
@@ -30,13 +36,13 @@ module.exports = {
         }],
 
         'vue/script-indent': [
-            'error', 4,
+            'error',
+            4,
             {
-                baseIndent: 1,
+                baseIndent: 0,
                 switchCase: 1
             },
         ]
-
     },
 
     overrides: [
