@@ -40,6 +40,13 @@ module.exports = {
 
         'func-names': 'off',
 
+        // Don't require file extensions for
+        'import/extensions': ['error', 'always', {
+            ts: 'never',
+            js: 'never',
+            vue: 'never'
+        }],
+
         // Disable the Airbnb requirement that module imports come before our own files, because it's much easier
         // to just sort the lines alphabetically.
         'import/order': 'off',
@@ -156,6 +163,12 @@ module.exports = {
             {
                 allowEmptyCatch: true
             },
+        ],
+
+        // Disable no-lonely-if https://eslint.org/docs/rules/no-lonely-if
+        // As discussed here: https://digitickets.atlassian.net/browse/PRO-1020
+        'no-lonely-if': [
+            'off',
         ],
 
         // Allow parameters to functions, and their properties, to be overridden as we do this a lot.
