@@ -26,6 +26,26 @@ Example .eslintrc:
             "@digitickets/eslint-config-digitickets",
         ]
     }    
+    
+### Webpack
+
+If you are using Webpack, install:
+
+    npm install eslint-import-resolver-webpack --save-dev
+    
+Add add this to your eslint config:
+
+    "settings": {
+        // Use aliases from Webpack config.
+        "import/resolver": {
+            // "node" is here to fix a problem with built-in packages being marked as unresolved
+            // https://github.com/benmosher/eslint-plugin-import/issues/1396#issuecomment-511007063
+            "node": {},
+            "webpack": {
+                "config": "./webpack.config.js"
+            }
+        }
+    },    
 
 ### Vue
 
@@ -38,7 +58,7 @@ The `vue.js` file contains extra rules to use with a Vue project. Add it to your
         ]
     }
 
-You'll also need to install:
+You'll also need to install these:
 
     npm install eslint-plugin-vue@latest --save-dev
 
