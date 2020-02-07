@@ -40,11 +40,13 @@ module.exports = {
 
         'func-names': 'off',
 
-        // Don't require file extensions for
+        // Set if file extensions (.js, .vue) should be there when importing a file.
         'import/extensions': ['error', 'always', {
             ts: 'never',
             js: 'never',
-            vue: 'never'
+            // Require the extension for .vue files because if you are using typescript with Vue and using
+            // aliases, tslint will complain about not finding the module.
+            vue: 'always'
         }],
 
         // Disable the Airbnb requirement that module imports come before our own files, because it's much easier

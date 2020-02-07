@@ -1,6 +1,6 @@
 module.exports = {
     extends: [
-        'plugin:vue/strongly-recommended',
+        'plugin:vue/recommended',
     ],
 
     // required to lint *.vue files
