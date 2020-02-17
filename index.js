@@ -7,6 +7,15 @@ module.exports = {
     ],
 
     rules: {
+        // Disable Airbnb's desire to convert:
+        // () => {
+        //     return something();
+        // }
+        // to:
+        // () => something();
+        // because while it is useful in this small example it can hinder readability in complex examples.
+        'arrow-body-style': 'off',
+
         // Require parens in arrow function arguments.
         // e.g. things.filter((color) => color === 'blue');
         // Originally we decided to set this to as-needed as it used to be in Airbnb. But always having them
@@ -137,10 +146,12 @@ module.exports = {
             'separate-lines',
         ],
 
+        // Allow `new something()` (lowercase first letter) because this is useful when you want to instantiate
+        // a variable.
+        'new-cap': 'off',
+
         // Allow window.alert for lazy messages.
-        'no-alert': [
-            'off',
-        ],
+        'no-alert': 'off',
 
         // Allow console.log etc.
         'no-console': 'off',
