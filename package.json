@@ -1,6 +1,6 @@
 {
   "name": "@digitickets/eslint-config-digitickets",
-  "version": "1.0.18",
+  "version": "1.0.19",
   "description": "This is a standard code style for all DigiTickets Javascript, based on [eslint-config-airbnb-base](https://www.npmjs.com/package/eslint-config-airbnb-base) with some tweaks to make things more to our liking.",
   "main": "index.js",
   "scripts": {
