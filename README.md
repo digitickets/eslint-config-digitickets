@@ -25,14 +25,14 @@ Example .eslintrc:
         "extends": [
             "@digitickets/eslint-config-digitickets",
         ]
-    }    
-    
+    }
+
 ### Webpack
 
 If you are using Webpack, install:
 
     npm install eslint-import-resolver-webpack --save-dev
-    
+
 Add add this to your eslint config:
 
     "settings": {
@@ -45,7 +45,7 @@ Add add this to your eslint config:
                 "config": "./webpack.config.js"
             }
         }
-    },    
+    },
 
 ### Vue
 
@@ -61,13 +61,3 @@ The `vue.js` file contains extra rules to use with a Vue project. Add it to your
 You'll also need to install these:
 
     npm install eslint-plugin-vue@latest --save-dev
-
-### ES5
-
-The `es5.js` file disables some rules for situations where ES6 cannot be used. Add it to your extends list **instead of** the base like this:
-
-    {
-        "extends": [
-            "@digitickets/eslint-config-digitickets/es5"
-        ]
-    }

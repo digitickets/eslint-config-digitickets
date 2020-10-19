@@ -11,7 +11,7 @@ module.exports = {
     rules: {
         'vue/html-closing-bracket-newline': ['error', {
             singleline: 'never',
-            multiline: 'never'
+            multiline: 'never',
         }],
 
         // Use 4 spaces for indents in HTML (maybe only applies in Vue templates?)
@@ -19,7 +19,7 @@ module.exports = {
             'error',
             4,
             {
-                baseIndent: 1
+                baseIndent: 1,
             },
         ],
 
@@ -31,8 +31,8 @@ module.exports = {
             singleline: 1,
             multiline: {
                 max: 1,
-                allowFirstLine: true
-            }
+                allowFirstLine: true,
+            },
         }],
 
         'vue/script-indent': [
@@ -40,9 +40,9 @@ module.exports = {
             4,
             {
                 baseIndent: 0,
-                switchCase: 1
+                switchCase: 1,
             },
-        ]
+        ],
     },
 
     overrides: [
@@ -51,8 +51,8 @@ module.exports = {
         {
             files: ['*.vue'],
             rules: {
-                indent: 'off'
-            }
+                indent: 'off',
+            },
         },
-    ]
+    ],
 };
