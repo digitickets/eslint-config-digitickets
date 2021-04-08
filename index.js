@@ -33,6 +33,15 @@ module.exports = {
         // This tries to make you convert methods that do not use 'this' into static methods.
         'class-methods-use-this': 'off',
 
+        // require trailing commas in multiline object literals
+        'comma-dangle': ['error', {
+            arrays: 'always-multiline',
+            objects: 'always-multiline',
+            imports: 'always-multiline',
+            exports: 'always-multiline',
+            functions: 'ignore',
+        }],
+
         // Don't require a default case in switch statements
         // https://eslint.org/docs/rules/default-case
         'default-case': 'off',
