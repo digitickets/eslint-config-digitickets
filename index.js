@@ -152,6 +152,12 @@ module.exports = {
         // Allow window.alert for lazy messages.
         'no-alert': 'off',
 
+        // "Performing an operation on each element of an iterable is a common task. However, performing an await as
+        // part of each operation is an indication that the program is not taking full advantage of the parallelization
+        // benefits of async/await."
+        // Sometimes there are genuine cases for running things in serial and not in parallel, so disable this rule.
+        'no-await-in-loop': 'off',
+
         // Allow console.log etc.
         'no-console': 'off',
 
