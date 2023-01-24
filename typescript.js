@@ -26,7 +26,7 @@ module.exports = {
                 'no-shadow': 'off',
                 '@typescript-eslint/no-shadow': ['error'],
 
-                '@typescript-eslint/explicit-function-return-type': 'error',
+                '@typescript-eslint/explicit-function-return-type': 'off',
 
                 // eslint calls a constructor that has property initialisation (private/protected/public prefixes
                 // on the params) a useless constructor. But it does do stuff.
