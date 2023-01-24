@@ -61,3 +61,17 @@ The `vue.js` file contains extra rules to use with a Vue project. Add it to your
 You'll also need to install these:
 
     npm install eslint-plugin-vue@latest --save-dev
+
+### Typescript
+
+If you are using Typescript extend this instead:
+
+    {
+        "extends": [
+            "@digitickets/eslint-config-digitickets/typescript",
+        ]
+    }
+
+You'll also need to install:
+
+    npm install --save-dev @typescript-eslint/parser@4.33.0 @typescript-eslint/eslint-plugin@4.33.0
