@@ -28,10 +28,11 @@ module.exports = {
         // https://github.com/vuejs/eslint-plugin-vue/blob/master/docs/rules/max-attributes-per-line.md
         // https://vuejs.org/v2/style-guide/#Multi-attribute-elements-strongly-recommended
         'vue/max-attributes-per-line': ['error', {
-            singleline: 1,
+            singleline: {
+                max: 1,
+            },
             multiline: {
                 max: 1,
-                allowFirstLine: true,
             },
         }],
 
