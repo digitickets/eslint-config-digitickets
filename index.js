@@ -260,6 +260,8 @@ module.exports = {
             'off',
         ],
 
+        'quote-props': ['error', 'consistent-as-needed'],
+
         radix: 'off',
 
         // https://eslint.org/docs/rules/vars-on-top
