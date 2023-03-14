@@ -36,6 +36,11 @@ module.exports = {
             },
         }],
 
+        'vue/first-attribute-linebreak': ['error', {
+            singleline: 'beside',
+            multiline: 'beside',
+        }],
+
         'vue/script-indent': [
             'error',
             4,
@@ -44,6 +49,10 @@ module.exports = {
                 switchCase: 1,
             },
         ],
+
+        'vue/multi-word-component-names': 'off',
+
+        'prefer-regex-literals': 'off',
     },
 
     overrides: [

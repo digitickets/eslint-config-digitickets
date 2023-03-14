@@ -48,6 +48,8 @@ module.exports = {
 
         'func-names': 'off',
 
+        'function-paren-newline': ['error', 'consistent'],
+
         // Set if file extensions (.js, .vue) should be there when importing a file.
         'import/extensions': ['error', 'always', {
             ts: 'never',
@@ -257,6 +259,8 @@ module.exports = {
         'prefer-template': [
             'off',
         ],
+
+        radix: 'off',
 
         // https://eslint.org/docs/rules/vars-on-top
         'vars-on-top': 'off',
