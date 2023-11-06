@@ -17,12 +17,12 @@
   },
   "homepage": "https://github.com/digitickets/eslint-config-digitickets#readme",
   "dependencies": {
-    "eslint": "^8.36.0",
+    "eslint": "^8.53.0",
     "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.27.5",
-    "eslint-plugin-jsdoc": "^40.0.2"
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-jsdoc": "^40.3.0"
   },
   "devDependencies": {
-    "eslint-plugin-vue": "^9.9.0"
+    "eslint-plugin-vue": "^9.18.1"
   }
 }

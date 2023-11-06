@@ -62,9 +62,24 @@ You'll also need to install these:
 
     npm install eslint-plugin-vue@latest --save-dev
 
+### Vue 3
+
+The `vue3.js` file contains extra rules to use with a Vue 3 project. Add it to your extends list **in addition to** the base like this:
+
+    {
+        "extends": [
+            "@digitickets/eslint-config-digitickets",
+            "@digitickets/eslint-config-digitickets/vue3"
+        ]
+    }
+
+You'll also need to install these plugins:
+
+    npm install eslint-plugin-vue@latest --save-dev
+
 ### Typescript
 
-If you are using Typescript extend this instead:
+If you are using Typescript extend this **instead of** the base:
 
     {
         "extends": [
@@ -72,6 +87,6 @@ If you are using Typescript extend this instead:
         ]
     }
 
-You'll also need to install:
+You'll also need to install these plugins:
 
     npm install --save-dev @typescript-eslint/parser@4.33.0 @typescript-eslint/eslint-plugin@4.33.0

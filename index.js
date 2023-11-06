@@ -67,7 +67,7 @@ module.exports = {
         'import/prefer-default-export': 'off',
 
         // Indent with 4 spaces
-        indent: [
+        'indent': [
             'error',
             4,
             {
@@ -254,6 +254,9 @@ module.exports = {
             'off',
         ],
 
+        // Disable: Disallow use of the RegExp constructor in favor of regular expression literals
+        'prefer-regex-literals': 'off',
+
         // Disable using template literals instead of string concatenation.
         // https://eslint.org/docs/rules/prefer-template
         'prefer-template': [
@@ -262,7 +265,7 @@ module.exports = {
 
         'quote-props': ['error', 'consistent-as-needed'],
 
-        radix: 'off',
+        'radix': 'off',
 
         // https://eslint.org/docs/rules/vars-on-top
         'vars-on-top': 'off',
