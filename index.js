@@ -92,9 +92,12 @@ module.exports = {
         ],
 
         // Require a blank line between the description and tags in a jsdoc.
-        'jsdoc/newline-after-description': [
+        'jsdoc/tag-lines': [
             'error',
-            'always',
+            'any',
+            {
+                startLines: 1,
+            },
         ],
 
         // Ensure all params are present in the jsdoc if there is one.

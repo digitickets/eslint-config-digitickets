@@ -1,10 +1,10 @@
 {
   "name": "@digitickets/eslint-config-digitickets",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "description": "This is a standard code style for all DigiTickets Javascript, based on [eslint-config-airbnb-base](https://www.npmjs.com/package/eslint-config-airbnb-base) with some tweaks to make things more to our liking.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint"
   },
   "repository": {
     "type": "git",
@@ -19,7 +19,7 @@
   "dependencies": {
     "eslint": "^8.53.0",
     "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-import": "^2.30.0",
     "eslint-plugin-jsdoc": "^50.2.2"
   },
   "devDependencies": {
