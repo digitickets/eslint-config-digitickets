@@ -3,6 +3,13 @@
   "version": "2.1.1",
   "description": "This is a standard code style for all DigiTickets Javascript, based on [eslint-config-airbnb-base](https://www.npmjs.com/package/eslint-config-airbnb-base) with some tweaks to make things more to our liking.",
   "main": "index.js",
+  "files": [
+    "index.js",
+    "typescript.js",
+    "vue.js",
+    "vue3.js",
+    "README.md"
+  ],
   "scripts": {
     "lint": "eslint"
   },
